@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="看林见月明，层峦叠嶂。"><title>项目提测CheckList | Mayi's Blog</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/8.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">项目提测CheckList</h1><a id="logo" href="/.">Mayi's Blog</a><p class="description">看林见月明，层峦叠嶂。</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> Start</i></a><a href="/archives/"><i class="fa fa-archive"> Archiv</i></a><a href="/about/"><i class="fa fa-user"> Über</i></a><a href="/atom.xml"><i class="fa fa-rss"> RSS</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">项目提测CheckList</h1><div class="post-meta">Jun 13, 2018</div><div class="post-content"><h2 id="编写完善checklist目的"><a href="#编写完善checklist目的" class="headerlink" title="编写完善checklist目的"></a>编写完善checklist目的</h2><p>维护一套checklist，借鉴测试，减少常规测试和常规bug。</p>
+<h2 id="提测说明"><a href="#提测说明" class="headerlink" title="提测说明"></a>提测说明</h2><p>新增模块<br>修改模块<br>影响范围<br>测试注意事项等。</p>
+<h2 id="前端："><a href="#前端：" class="headerlink" title="前端："></a>前端：</h2><ul>
+<li>代码是否提交完整</li>
+<li>代码是否提交了与本次新增/修改无关的内容</li>
+<li>界面控件标题是否正确</li>
+<li>界面提示信息是否准确</li>
+<li>界面控件必填项检查（null，空格等）</li>
+<li>界面布局合理性检查</li>
+<li>下拉框选择项检查</li>
+<li>文本输入框检查（最大最小字符数等长度限制，输入超长字段，输入框是否被撑开）</li>
+<li>输入合法性检查（文本OR数值，是否支持小数）</li>
+<li>联动关系检查（地区等有层级关系的数据）</li>
+<li>导入文件格式检查（不合理的文件格式是否有提示）</li>
+<li>导出文件结果是否正确（是否按查询条件导出，导出数据格式是否正确）</li>
+<li>按钮功能是否实现（重置/取消/是否跳转等）</li>
+<li>查询操作显示结果是否符合常规（日期格式，金额，排序等）</li>
+<li>分页检查</li>
+<li>F12控制台是否有error</li>
+<li>切换窗口大小，页面是否按比例缩放（前期可不做）</li>
+<li>浏览器的前进、后退、刷新按钮，系统是否正确处理（前期可不做）</li>
+<li>是否进行过自测或冒烟测试</li>
+</ul>
+<h2 id="后台："><a href="#后台：" class="headerlink" title="后台："></a>后台：</h2><ul>
+<li>代码是否提交完整</li>
+<li>代码是否提交了与本次新增/修改无关的内容</li>
+<li>提测模块主流程是否通畅</li>
+<li>提测模块是否进行异常情况处理（空指针等）</li>
+<li>apizza上文档是否和代码保持一致</li>
+<li>是否进行过自测或冒烟测试</li>
+</ul>
+<h2 id="数据库："><a href="#数据库：" class="headerlink" title="数据库："></a>数据库：</h2><ul>
+<li>新建的数据库表（提供表名或者SQL脚本文件）</li>
+<li>修改的数据库表结构（表名，变动内容）</li>
+<li>寄存数据是否需要脚本修改</li>
+</ul>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p><strong>新功能测试：</strong><br>    大颗粒度保证各个功能点被覆盖，不必过于详细，进行持续验证；功能满足后进行bug大扫除，细粒度验证。</p>
+<p><strong>回归测试：</strong><br> 通过code diff了解代码变动的地方，做关联分析，明确哪些地方需要回归测试。<br> 回归测试主要保证功能点没有问题，忽略细节问题。<br> 为各系统维护一套测试点的checklist，精简列出需要关注和易被遗漏的测试点，可以放到wiki，不断补充完善。</p>
+</div><iframe src="/donate/?AliPayQR=/alipay.jpg&amp;WeChatQR=/wechatpay.png&amp;GitHub=null&amp;BTCQR=null&amp;BTCKEY=null&amp;PayPal=null" style="overflow-x:hidden; overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;" frameborder="0" scrolling="no"></iframe><div class="tags"><a href="/tags/软件测试/">软件测试</a></div><div class="post-nav"><a class="pre" href="/2018/06/13/Markdown快捷键/">Markdown快捷键</a><a class="next" href="/2018/05/29/软件测试中的版本控制/">软件测试中的版本控制</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="http://yoursite.com"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Kategorien</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"><a href="/tags/MarkDown/" style="font-size: 15px;">MarkDown</a> <a href="/tags/时间管理/" style="font-size: 15px;">时间管理</a> <a href="/tags/python/" style="font-size: 15px;">python</a> <a href="/tags/软件测试/" style="font-size: 15px;">软件测试</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Letzte</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/06/14/python下载安装BeautifulSoup库和Request库/">python下载安装BeautifulSoup库和Request库</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/14/提高效率tips/">提高效率tips</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/13/Markdown快捷键/">Markdown快捷键</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/13/项目提测CheckList/">项目提测CheckList</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/29/软件测试中的版本控制/">软件测试中的版本控制</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Blogroll</i></div><ul></ul><a href="https://blog.csdn.net/u010005040" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="https://weibo.com/mashuyi123/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">Mayi's Blog.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
